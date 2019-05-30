@@ -1,0 +1,9 @@
+
+app:
+    ad-domain: DOMAIN.LOCAL
+    ad-server: ldap://active-directory.domain.local/
+    service-principal: HTTP/application-server.domain.local
+    keytab-location: c:\tmp\user.keytab
+    krb-conf-location: c:\Windows\krb5.ini
+    ldap-search-base: dc=domain,dc=local
+    ldap-search-filter: "(| (userPrincipalName={0}) (sAMAccountName={0}))"
